@@ -38,7 +38,7 @@ while funcao > 0:
     funcao = funcao-4
     tentativas = tentativas+1
 
-if funcao < 0:
+if funcao < 0 and tentativas >= 1:
     tentativas = tentativas-1
 
 luzPotencia = 100+tentativas*60
