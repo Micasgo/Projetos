@@ -18,13 +18,14 @@ else:
 
 lado1 = str(input("Em metros, qual o comprimento de uma das paredes? : "))
 lado2 = str(input("Em metros, qual o comprimento da outra parede? : "))
+grossura = str(input("Qual a grossura da parede em metros? :"))
 
 tamanho1 = float(lado1.replace(",","."))
 tamanho2 = float(lado2.replace(",","."))
-
+largParede = float(grossura.replace(",","."))
 
 #Define o que é perímero e área
-perimetro = 2 * (tamanho1 + tamanho2)
+perimetro = 2 * (tamanho1 + tamanho2) + 8*largParede
 area = tamanho1 * tamanho2 
 
 #Define a quantidade de TUG's para o cômodo
@@ -46,3 +47,5 @@ luzPotencia = 100+tentativas*60
 # Mostra os resultados
 print("A quantidade de TUG's necessária é", tug)
 print("A potência de Iluminação necessária é de", luzPotencia,"VA")
+print("O Perímetro é",perimetro, "m")
+print("A área é",area, "m")
